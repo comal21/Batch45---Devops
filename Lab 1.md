@@ -7,7 +7,7 @@
 * AMI Type and OS Version: `Ubuntu 22.04 LTS`
 * Instance type: `t2.micro`
 * Create key pair with name: `DevOps-Keypair`
-* Create security group with name: `DevOps-SG`
+* Open the below ports
    (Include Ports: `22 [SSH],` `80 [HTTP],` `8080 [Jenkins],` `9999 [Tomcat],` and `4243 [Docker]`)
 * Configure Storage: 10 GiB
 * Click on `Launch Instance.`
