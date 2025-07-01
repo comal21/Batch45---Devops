@@ -4,10 +4,10 @@
 
 * Region: North Virginia (us-east-1).
 * Use tag Name: `Jump-Server`
-* AMI Type and OS Version: `Ubuntu 22.04 LTS`
+* AMI Type and OS Version: `Ubuntu 24.04 LTS`
 * Instance type: `t2.micro`
 * Create key pair with name: `DevOps-Keypair`
-* Open the below ports
+* Create security group with name: `DevOps-SG`
    (Include Ports: `22 [SSH],` `80 [HTTP],` `8080 [Jenkins],` `9999 [Tomcat],` and `4243 [Docker]`)
 * Configure Storage: 10 GiB
 * Click on `Launch Instance.`
@@ -439,6 +439,17 @@ Verify the Docker Landing Page: Open a web browser and access the Docker landing
 ```
 http://<Your_Docker_IP>:4243/version
 ```
+---------------------------------------------------------------------
+**Summary:**
+1. Launch two EC2 instances in AWS - one for Jenkins and one for Docker.
+2. Install Terraform on the Jenkins server to automate infrastructure provisioning.
+3. Configure AWS CLI and Ansible for managing resources.
+4. Create a Terraform configuration to define the servers and their attributes.
+5. Launch the servers using Terraform.
+6. Update the Ansible hosts file with the server details.
+7. Configure Jenkins and Docker servers with proper host names.
+8. Use Ansible to install necessary software packages and dependencies on both servers.
 
+#### =============================END of LAB-01=============================
 
 
