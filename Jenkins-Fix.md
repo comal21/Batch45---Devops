@@ -1,15 +1,3 @@
-Connect to the jenkins server.
-```
-cd /var/lib/jenkins/
-```
-```
-sudo nano jenkins.model.JenkinsLocationConfiguration.xml
-```
-In this file change the URL of the Jenkins server
-and restart Jenkins using:
-```
-sudo service jenkins restart
-```
 Steps to Upgrade from t2.micro to t3.medium
 1. Stop the EC2 Instance
 Go to AWS Console → EC2 → Instances
@@ -23,3 +11,17 @@ Click Apply
 
 3. Start the Instance
 Click Instance state → Start instance
+
+Connect to the jenkins server.
+```
+cd /var/lib/jenkins/
+```
+```
+sudo nano jenkins.model.JenkinsLocationConfiguration.xml
+```
+In this file change the URL of the Jenkins server
+and restart Jenkins using:
+```
+sudo service jenkins restart
+```
+
