@@ -11,7 +11,7 @@ In this lab, you will set up a Docker container as a Jenkins slave, build a Dock
 From your **jumpserver or local terminal**, SSH into the Jenkins server:
 
 ```bash
-ssh -i <your-key.pem> ubuntu@<jenkins-server-public-ip>
+ssh ubuntu@<jenkins-server-public-ip>
 ```
 
 Switch to the `root` user:
@@ -25,7 +25,7 @@ sudo su
 ### Step 2: Generate SSH Key Pair on Jenkins Server (as root)
 
 ```bash
-ssh-keygen
+ssh-keygen -t rsa
 ```
 
 * Press `ENTER` at all prompts (to accept default file location and no passphrase).
@@ -53,7 +53,7 @@ Copy the full output (it will start with `ssh-rsa`...).
 From your terminal (new tab or logout from Jenkins), SSH into Docker server:
 
 ```bash
-ssh -i <your-key.pem> ubuntu@<docker-server-public-ip>
+ssh ubuntu@<docker-server-public-ip>
 ```
 
 Switch to root:
